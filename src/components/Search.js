@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 
-function Search({handleSearch}) {
+function Search({SetFilter}) {
 
   const [text, SetText] = useState("")
 
   function handleSubmit(e) {
     e.preventDefault();
-    handleSearch(text);
+    SetFilter(text);
   }
 
   return (
